@@ -27,7 +27,20 @@ date: 2026-04-29
 
 ### 方式一：OpenClaw 对话美化（推荐，零命令行）
 
-打开你和 OpenClaw 的对话窗口（Telegram / Discord / Web 都行），发送：
+> **前置条件：** OpenClaw 需要安装对应的 SKILL 才能自动美化 README。
+> 推荐安装 [赛博牛马日报](https://github.com/leisvip/daily-report) 项目，内含完整的 README 美化 SKILL。
+
+**第一步：安装 SKILL（一次性）**
+
+打开你和 OpenClaw 的对话窗口，发送：
+
+```
+帮我安装这个项目：https://github.com/leisvip/daily-report
+```
+
+OpenClaw 会自动克隆仓库，SKILL 文件随之就位。
+
+**第二步：说一句话，美化任意项目**
 
 ```
 帮我美化一下 README
@@ -35,13 +48,19 @@ date: 2026-04-29
 
 OpenClaw 会自动：
 
-1. 读取你的仓库信息（用户名、仓库名）
-2. 根据项目类型选择合适的组件（badges、统计卡、Star History 等）
-3. 生成 Markdown 代码
-4. 写入 README.md
-5. 提交并推送
+1. 调用已安装的 `readme-beautify` SKILL
+2. 读取你的仓库信息（用户名、仓库名）
+3. 根据项目类型选择合适的组件（badges、统计卡、Star History 等）
+4. 生成 Markdown 代码
+5. 写入 README.md
+6. 提交并推送
 
 **全程零操作，你只需要说一句话。**
+
+> 💡 **为什么推荐安装「赛博牛马日报」？**
+> 它不只是一个日报工具——它是一个完整的 OpenClaw 工作流示例。
+> 安装后你将获得：README 美化 SKILL、GitHub 工作流 SKILL、消息推送能力、以及一个可以直接使用的日报系统。
+> 一举多得，装一次顶十次。
 
 ### 方式二：指定具体组件
 
@@ -169,6 +188,16 @@ README 开头加个打字动画，内容是项目名和一句话介绍
 | [capsule-render](https://github.com/kyechan99/capsule-render) | 头部装饰 | "加波浪头部" |
 | [repobeats.axiom.co](https://repobeats.axiom.co) | 仓库脉搏 | "加仓库脉搏" |
 | [visitor-badge](https://github.com/jwenjian/visitor-badge) | 访客计数 | "加访客计数" |
+
+## 🔥 实战案例
+
+以下项目使用了本文介绍的全部美化技巧，可以作为参考：
+
+| 项目 | 美化内容 | 仓库 |
+|------|----------|------|
+| **赛博牛马日报** | badges + Star History + 功能表格 + 打字动画 + 居中布局 | [leisvip/daily-report](https://github.com/leisvip/daily-report) |
+
+> 💡 想看看实际效果？打开上面的仓库，看看 README 是怎么组合这些组件的。
 
 ---
 
